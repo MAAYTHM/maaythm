@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>Aayush Samriya - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/my-avatar.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" style="background: transparent !important">
+          <img src="assets/images/my-avatar.png" alt="Aayush Samriya" width="80" loading="lazy">
+        </figure>
+
+        
+      <div class="info-content">
+        <h1 class="name" title="Sasi Kumar.M">Aayush Samriya</h1>
+        
+        <p class="title">👉 Offensive Security Practioner
+        <br>👉 CTF Player
+        <br>👉 Website Developer
+        <br>👉 Gamer
+        <br>👉 AI Content Writer</p>
+      </div>
+  
+        
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:aayushsamriya.ceh@gmail.com" class="contact-link">aayushsamriya.ceh@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Fiverr (Gig / Service Profile)</p>
+
+              <a href="https://www.fiverr.com/aayush_samriya" class="contact-link">Profile</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday Year</p>
+
+              <time datetime="1982-06-23">2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bhilwara, Rajasthan, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://in.linkedin.com/in/aayush-samriya-2265131b4" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="http://x.com/_ASs4s1n_" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/MAAYTHM" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I’m Aayush Samriya - an aspiring Offensive Security Professional and passionate Pentester. With a strong foundation in cybersecurity, programming, and ethical hacking, I thrive on uncovering real-world vulnerabilities and strengthening digital defenses.
+          </p>
+
+          <p>
+            I have hands-on experience in bug bounties, CTFs, and web application security, and I’m an active contributor on platforms like TryHackMe (Top 1% globally) and Hack The Box. My technical toolkit is anchored in Python, and I hold the CEH (Master) certification, which I achieved at age 17 as a testament to my early commitment to ethical hacking...
+          </p>
+
+          <p>
+            Currently, I am deepening my expertise by completing HTB Academy’s offensive security modules and following the CRTO (Certified Red Team Operator) roadmap-with the goal of earning the CRTO certification soon. I am always eager to learn, break, and build in the dynamic world of cyber.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span style="font-size: 40px;">🚀</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">HTB Academy Modules</h4>
+
+                <p class="service-item-text">
+                  Actively completing HTB Academy’s Offensive Security Modules to deepen practical penetration testing skills...
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span style="font-size: 40px;">🎯</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Certification</h4>
+
+                <p class="service-item-text">
+                  Following the Certified Red Team Operator (CRTO) roadmap, aiming to earn the CRTO certification soon...
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span style="font-size: 40px;">🕵️‍♂️</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Active Hunter</h4>
+
+                <p class="service-item-text">
+                  Participating in Capture The Flag (CTF) competitions and bug bounty programs to sharpen real-world offensive security expertise...
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span style="font-size: 40px;">🐍</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming Tools</h4>
+
+                <p class="service-item-text">
+                  Enhancing my programming skills, especially in Python, to build custom tools and automate security assessments...
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span style="font-size: 40px;">🤝</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">OffSec Practice</h4>
+
+                <p class="service-item-text">
+                  Engaging with cybersecurity communities on TryHackMe, Hack The Box, and other platforms to collaborate and grow...
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Chinmay Porwal" width="60" data-testimonials-avatar loading="lazy">
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Chinmay Porwal</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I’ve known Aayush Samriya as a dedicated and passionate cybersecurity enthusiast and classmate. He consistently demonstrates strong skills in offensive security and ethical hacking, often helping me with security concerns in my projects.
+                  </p>
+                  <br>
+                  <p>
+                    Aayush’s hands-on experience with platforms like TryHackMe and Hack The Box, along with his CEH Master certification, reflect his commitment and expertise. He’s approachable, knowledgeable, and a great collaborator in the cybersecurity field.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="" alt="" width="80" data-modal-img loading="lazy">
+              </figure>
+              <button class="modal-quote-btn">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" style="width: 40px; transform: rotate(180deg);" viewBox="0 0 512 512">
+                  <path d="M96.4 416h77.1l50.9-96.6V96h-160v223.4h77.1L96.4 416zm224 0h77.1l50-96.6V96H288.4v223.4h82l-50 96.6z"/>
+                </svg> -->
+                <div class="social-list">
+                  <li class="social-item">
+                    <a href="https://in.linkedin.com/in/chinmay-porwal" class="social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+                  </div>
+              </button>
+              
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Time</h4>
+              <time id="current-time" datetime="2025-02-16T11:33:44.450Z"></time>
+              <div data-modal-text>
+                <p></p>
+              </div>
+            </div>
+            
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo" loading="lazy">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>-->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Computer Applications (BCA)</h4>
+
+              <span>Chandigarh University | 2022 - 2025</span>
+
+              <p class="timeline-text">
+                Completed a Bachelor of Computer Applications (BCA) degree at Chandigarh University, focusing on software development, programming, and foundational IT skills.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High School (Commerce Stream)</h4>
+
+              <span>Central Academy Senior Secondary School | Completed 2021</span>
+
+              <p class="timeline-text">
+                Gained foundational programming skills in C and Python through Information Practices during higher secondary education.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">CERTIFICATION</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Multiple Participation & Top Rank @ CTF Events </h4>
+
+              <span>Dec 2024 - May 2025</span>
+
+              <p class="timeline-text">
+                (HacktheBox University CTF 2025, HacktheBox AiVsHuman CTF, TCS HackQuest, NCIIPC Pentathon 2025, DSCI Hackathon 2024)
+                <br>
+                Actively participated and secured top ranks in national and international CTF competitions, including Hack The Box, TCS HackQuest, NCIIPC Pentathon 2025, and DSCI Hackathon 2024. Demonstrated strong problem-solving skills and practical expertise in offensive security challenges...
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IELTS Certification</h4>
+            
+              <span>01 February 2025</span>
+            
+              <p class="timeline-text">
+                Achieved an overall band score of 7.5 in the International English Language Testing System (IELTS), demonstrating a high level of English proficiency in listening, reading, writing, and speaking.
+              </p>
+            
+            </li>            
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CEH Master v10</h4>
+            
+              <span>05 September 2021</span>
+            
+              <p class="timeline-text">
+                (EC-Council)<br>
+                Earned the Certified Ethical Hacker (CEH) Master v10 certification, demonstrating advanced knowledge and hands-on expertise in ethical hacking, penetration testing, and cybersecurity methodologies.
+              </p>
+            
+            </li>
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HackerRank - Problem Solving (Basic)</h4>
+            
+              <span>09 March 2021</span>
+            
+              <p class="timeline-text">
+                Earned the Problem Solving (Basic) certification from HackerRank, demonstrating strong analytical thinking and foundational programming skills through algorithmic challenges.
+              </p>
+            
+            </li>
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HackerRank - Python (Basic)</h4>
+            
+              <span>11 August 2020</span>
+            
+              <p class="timeline-text">
+                Achieved the Python (Basic) certification on HackerRank, validating core programming skills and proficiency in Python fundamentals.
+              </p>
+            
+            </li>
+            
+
+          </ol>
+
+        </section>
+      
+      
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+        
+          <ul class="skills-list content-card">
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web Pentesting</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">CTF Skills</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Backend Development</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Frontend (HTML, CSS, JS, Bootstrap, Tailwind, Figma)</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Linux & Windows</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Git & Vercel</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Communication</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Languages</h5>
+                <data value="90">English (Fluent), Hindi (Native), German (Basic)</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Active Directory & Red Teaming</h5>
+                <data value="40">40%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Ethical Hacking & Offensive Security</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+        
+          </ul>
+        
+          <a href="https://drive.google.com/file/d/1AsYygeUevpIgZDLvhhSknC5CFs71QMkK/view?usp=drive_link" download="Aayush_Samriya_Resume.pdf">
+            <button class="download-btn">
+              <ion-icon name="cloud-download-outline"></ion-icon>
+              Download Resume
+            </button>
+          </a>
+        
+        </section>
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Project
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="project">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Python Tool</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Website</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Light Novel</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Python Tool</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Website</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Light Novel</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="python tool">
+              <a href="https://github.com/MAAYTHM/secrsub">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/secrsub.png" alt="a python tool" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Secrsub</h3>
+
+                <p class="project-category">Python Tool</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python tool">
+              <a href="https://github.com/MAAYTHM/riskiqsub">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/riskiqsub.png" alt="a python tool" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RiskIQSub</h3>
+
+                <p class="project-category">Python Tool</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python tool">
+              <a href="https://github.com/MAAYTHM/PySM">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/pysm.png" alt="a python tool" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PySM</h3>
+
+                <p class="project-category">Python Tool</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="python tool">
+              <a href="https://github.com/MAAYTHM/deauth_wif_for_windows">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/wifiDeauth.png" alt="a python tool" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Wifi Deauthenticator For Windows</h3>
+
+                <p class="project-category">Python Tool</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="python tool">
+              <a href="https://github.com/MAAYTHM/PulseSub">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/pulsesub.png" alt="a python tool" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PulseSub</h3>
+
+                <p class="project-category">Python Tool</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="assets/images/blog_coming.jpg" alt="New Blog in 2025" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Fundamentals</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-05-??">May, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Coming Soon...</h3>
+
+                  <p class="blog-text">
+                    Exciting insights and fresh content are on their way - stay tuned! 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57694.26451491691!2d74.63173619999999!3d25.34142055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c2368c070a55%3A0xc92f70a42dcb5294!2sBhilwara%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1747424701489!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="https://script.google.com/macros/s/AKfycbwHd4NO7FeJPsRizSuSW66IfGXDh8eZCjGXwxUY5MeBkIiAmCc4GzpdCpmko3WYtPxyJA/exec" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+            <div class="g-recaptcha" data-sitekey="6Lcugz0rAAAAADhO11sMr9f7coF-N4bTOZf12T01"></div>
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
